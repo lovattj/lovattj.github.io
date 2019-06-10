@@ -38,7 +38,7 @@
 
     <div>
       {% for f in site.static_files %}
-        {{ f.path }}
+        {{ site.baseurl }}{{ f.path }}
       {% endfor %}
     </div>
 
