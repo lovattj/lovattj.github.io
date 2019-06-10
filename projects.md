@@ -6,7 +6,7 @@ permalink: /projects/
 
 Here are some of the things that I'm working on, or have been in the past.
 
-### <i class="fal fa-file-code"></i> Web Apps
+### <i class="fal fa-globe-africa"></i> Web Apps
 
 [uChords](https://api.jlls.info/uc/index.php) - i love playing the ukulele but can never remember the chords - so this is a useful reference!
 
