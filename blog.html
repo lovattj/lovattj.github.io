@@ -1,18 +1,25 @@
 ---
-layout: default
+layout: page
+title: Blog
+permalink: /blog/
 ---
+<p>Here are some of the things that I'm working on, or have been in the past.</p>
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <div class="card">
+      <article class="post card-body">
+        
+        <div class="alert alert-primary" role="alert">
+          <h5 class="mb-0 card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+        </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" title="Read More" class="read-more">Read More <i class="fal fa-angle-double-right"></i></a>
-    </article>
+        <div class="card-text text-justify entry">
+          {{ post.excerpt }}
+        </div>
+      
+        <a href="{{ site.baseurl }}{{ post.url }}" title="Read More" class="read-more"><button class="btn btn-primary">Read More <i class="fal fa-chevron-right"></i></button></a>
+      </article> 
+    </div> <!-- card -->
   {% endfor %}
-</div>
+</div> <!-- posts -->

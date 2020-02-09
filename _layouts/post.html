@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
+<div class="card blog-card">
+  <article class="post">
+    <h2 class="card-title"><i class="far fa-quote-left"></i> {{ page.title }} <i class="far fa-quote-right"></i></h2>
+    <br>
+    <div class="card-text text-left entry">
+      {{ content }}
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+      <a title="Permalink to this post" href="#" class="card-link">Permalink</a> &bull; Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+    
+  </article>
+</div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-  
-</article>
+<a href="/blog"><button class="btn btn-primary"><i class="far fa-chevron-left"></i> Back to Blog</button></a>
